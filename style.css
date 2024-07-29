@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.imglogoimage{
+    width:100px;
+    padding-left: 40px;
+}
+
+.nav-links {
+    display: flex;
+    padding: 50px;
+    margin-left: 5%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    padding: 10px;
+    list-style: none;
+    
+    
+}
+.container{
+    display: flex;
+    padding: 5px;
+    
+
+}
+
+.button-links{
+    padding-left: 40%;
+}
+.button-links button{
+    margin-top: 60px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 4px;
+    
+     
+}
+
+.button-links-register{
+    color: black;
+}
