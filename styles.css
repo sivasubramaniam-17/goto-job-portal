@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+
+
+.imglogoimage{
+    width: 70px;
+    height: auto;
+
+}
+.logo-heading h1{
+    color: rgb(10, 10, 81);
+    
+}
+.logo-heading h3{
+    color: red;
+    font-size: 10px;
+}
+
+.nav-links{
+    display: flex;
+    gap:10px;
+    list-style: none;   
+}
+.button-links{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.login-btn{
+    border: none;
+    outline: none;
+    font-family: inherit;
+    padding:10px 20px ;
+    border-radius: 50px;
+}
