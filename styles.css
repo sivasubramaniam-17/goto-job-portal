@@ -3,6 +3,7 @@
   margin: 0;
   text-decoration: none;
   font-family: "League Spartan", sans-serif;
+  /* box-sizing: border-box; */
 }
 
 .navbar {
@@ -10,6 +11,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 .logo {
   display: flex;
@@ -34,8 +36,8 @@
   gap: 20px;
   list-style: none;
 }
-.nav-links a{
-    color: rgb(42, 40, 40);
+.nav-links a {
+  color: rgb(42, 40, 40);
   font-weight: light;
   font-size: 20px;
 }
@@ -45,9 +47,9 @@
   align-items: center;
 }
 
-.button-links a{
-    color: black;
-    font-size: 20px;
+.button-links a {
+  color: black;
+  font-size: 20px;
 }
 
 .login-btn {
@@ -59,26 +61,27 @@
   font-size: 20px;
   background-color: orangered;
 }
-.login-btn:hover{
-color: white;
-background-color: aquamarine;
-transition: 0.5s;
-
+.login-btn:hover {
+  color: white;
+  background-color: aquamarine;
+  transition: 0.5s;
 }
+
 .main-section {
-  background-image: url(images/close-up-young-business-team-working.jpg);
+  background-image: url(images/close-up-young-business-team-working.jpg); /* Update the URL if needed */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-repeat: no-repeat;
+  /* background-position:center;  */
   width: 100%;
-
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  /* background-position: top; */
+  height: 82vh; /* Adjust height as needed */
+  padding-top: 10px;
+  padding-bottom: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+  object-fit: cover;
   position: relative;
-  /* padding-top: 150px; */
-  /* padding-bottom: 150px; */
-  /* overflow: hidden; */
-  height: 100vh;
-  /* object-fit: cover; */
 }
+
 
 .section-overlay {
   position: absolute;
@@ -99,8 +102,8 @@ transition: 0.5s;
   /* padding-bottom: 150px; */
 }
 .white-text {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: white;
   font-size: 18px;
@@ -113,19 +116,22 @@ transition: 0.5s;
 
 .small-text {
   position: relative;
-  left: 10px;
+  left: 95px;
+  top: 15px;
   color: red;
 }
 
 .big-text {
   position: relative;
-  top: 10px;
+  top: 30px;
+  left: 90px;
 }
 
 .browse-btn {
   border: 2px solid aqua;
   font-size: 16px;
-  top: 30px;
+  top: 35px;
+  left: 75px;
   border-radius: 50px;
   line-height: normal;
   padding: 15px 20px;
@@ -150,7 +156,7 @@ transition: 0.5s;
 
 .browse-btn:hover {
   color: white;
-  background-color:mediumturquoise;
+  background-color: mediumturquoise;
   transition: 0.5s;
 }
 
@@ -183,84 +189,363 @@ transition: 0.5s;
   border-radius: 20px;
 }
 
-.input-group2{
-    background-color: white;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    position: relative;
-    left: 100px;
+.input-group2 {
+  background-color: white;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  position: relative;
+  left: 100px;
+}
+
+.locationinput {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.control-form {
+  position: absolute;
+  top: 61px;
+  left: 175px;
+}
+
+.submitt {
+  text-decoration: none;
+  background-color: aliceblue;
+  position: absolute;
+  height: 20px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  left: -175px;
+  font-size: 18px;
+  background-color: #6458cb;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.submitt:hover {
+  color: white;
+  background-color: rgb(115, 236, 196);
+  transition: 0.5s;
+}
+
+.row-key-words {
+  display: flex;
+  position: absolute;
+  top: 134px;
+  left: 0%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 128px;
+  left: 140px;
+  width: 100%;
+  gap: 15px;
+}
+
+.badge a {
+  color: white;
+  font-weight: lighter;
+  font-size: 12px;
+  border: 1.5px solid;
+  border-radius: 20px;
+  padding: 8px 8px;
+}
+
+.badge a:hover {
+  color: #6458cb;
+  background-color: white;
+  transition: 0.5s;
+}
+.second-section{
+  height: 40vh;
+  /* padding-bottom: 50px; */
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 100px 200px;
+  grid-template-areas: 
+  "t t t t t "
+  'c1 c2 c3 c4 c5 ';
+  /* gap: 10px; */
+  /* column-gap: 10px; */
+  
+
+}
+.top{
+  grid-area: t;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.top h2{
+  font-size: 45px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.card1{
+  grid-area: c1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card2{
+  grid-area: c2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card3{
+  grid-area: c3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card4{
+  grid-area: c4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card5{
+  grid-area: c5;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-text{
+  border: 10px solid#6458cb;
+  width: 120px;
+  height: 125px;
+  border-radius: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #352c87;
+  color:white;
+  
+}
+.web-text:hover{
+border: transparent;
+transition: 2s;
+}
+.marketing-text:hover{
+  border: transparent;
+  transition: 2s;
+}
+.video-text:hover{
+  border: transparent;
+transition: 2s;
+}
+.website-text:hover{
+  border: transparent;
+transition: 2s;
+}
+
+.customer-text:hover{
+  border: transparent;
+transition: 2s;
+}
+
+.marketing-text{
+  border: 10px solid#6458cb;
+  width: 120px;
+  height: 125px;
+  border-radius: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #352c87;
+  color:white;
+}
+
+.video-text{
+  border: 10px solid#6458cb;
+  width: 120px;
+  height: 125px;
+  border-radius: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #352c87;
+  color:white;
+}
+
+.website-text{
+  border: 10px solid#6458cb;
+  width: 120px;
+  height: 125px;
+  border-radius: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #352c87;
+  color:white;
+}
+
+.customer-text{
+  border: 10px solid#6458cb;
+  width: 120px;
+  height: 125px;
+  border-radius: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #352c87;
+  color:white;
+  text-align: center;
+}
+
+.aboutsection{
+  height: 60vh;
+  padding: 10px 50px 10px 50px;
+  column-gap: 25px;
+  display: grid;
+  grid-template-columns:1fr 2fr 1fr;
+  /* grid-template-rows: 100px 200px; */
+  grid-template-areas: "c1 c2 c3";
+
+}
+
+.photo1{
+  background-image:url(images/professional-asian-businesswoman-gray-blazer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.about-info{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  background-color: #352c87;
+  top: 240px;
+  left: 45px;
+  width: 150px;
+  height: 85px;
+  border-radius: 20px;
+  font-size: 30px;
+  justify-content: center;
+  /* align-items: center; */
+  border-top: 30px solid #0dcaf0;
+  color: white;
+  font-weight: lighter;
+}
+.about-info p{
+  font-size: 20px;
+  
 }
 
 
 
-.locationinput{
-    padding: 10px;
-    border-radius: 20px;
+
+.photo2{
+  background-color:#0dcaf0;
+  column-gap: 10px;
+  display: grid;
+  padding: 80px 60px;
+  color: white;
 }
 
-.control-form{
-    position: absolute;
-    top: 61px;
-    left: 175px;
+.photo2 h2{
+  font-size: 45px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  height: 35px;
+  margin-bottom: 10px;
 }
 
-.submitt{
-    text-decoration: none;
-    background-color: aliceblue;
-    position: absolute;
-    height: 20px;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    padding: 10px 10px 10px 10px;
-    border-radius: 20px;
-    left: -175px;
-    font-size: 18px;
-    background-color: #6458cb;
-    color: white;
-    margin-bottom: 24px;
+.para{
+  margin-top: 0%;
+  /* padding-bottom: 70px; */
+  font-weight: 300;
 
+  letter-spacing: 1px;
+  line-height: 33px;
 }
 
-.submitt:hover{
-    color:white;
-    background-color: rgb(115, 236, 196);
-    transition: 0.5s;
+.para a:hover{
+color: orangered;
+transition: 0.5s;
+}
+.about-btn{
+  display: flex;
+  align-items: center;
+}
+.about-btn1{
+  border: 2px solid white;
+  width: 130px;
+  height: 42px;
+  border-radius: 30px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-.row-key-words{
-    display: flex;
-    position: absolute;
-    top: 134px;
-    left: 0%;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
+.about-btn1:hover{
+  color: rgb(169, 50, 7);
+  background-color: rgb(246, 195, 176);
+  transition: 0.5s;
 }
 
-.badge{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 128px;
-    left: 140px;
-    width: 100%;
-    gap: 15px;
-}
-
-.badge a{
-    color: white;
-    font-weight: lighter;
-    font-size: 12px;
-    border: 1.5px solid;
-    border-radius: 20px;
-    padding: 8px 8px;
+.explore-btn:hover{
+  border: 1px;
 
 }
 
-.badge a:hover{
-    color:#6458cb ;
-    background-color: white;
-    transition: 0.5s;
+.explore-btn{
+  display: flex;
+  justify-content: center;
+  width: 130px;
+  color: white;
+}
+
+.photo3{ 
+  background-image: url(images/horizontal-shot-happy-mixed-race-females.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.insta-block{
+  top: 47%;
+  left: 37%;
+  position: relative;
+  border: 2px solid orangered;
+  width: 70px;
+  padding: 5px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: orangered;
+
+}
+
+.insta-block a{
+  color: white;
+  font-size: 14px;
+}
+.job-section{
+  padding-top:100px ;
+  padding-bottom: 100px;
 }
